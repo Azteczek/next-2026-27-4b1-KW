@@ -1,12 +1,8 @@
 export default function RootLayout({ children }) {
   return (
-      <body>
-        <header style={{ background: '#4f4848', padding: '1rem'}}>
-          <nav>
-            <strong> About </strong>
-          </nav>
-        </header>
-        {children}
-      </body>
+    <div>
+      <h1>About</h1>
+      {children}
+    </div>
   );
-}
+}2
