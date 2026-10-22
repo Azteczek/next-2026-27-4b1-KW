@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Dashboard from '@/components/Dashboard';
 import Badge from "@/components/Badge";
+import CounterWithLog from '@/components/CounterWithLog';
 
 
 export default function HomePage() {
@@ -15,6 +16,7 @@ export default function HomePage() {
     <Link href="/landing"> Przejdz do strony marketingowej </Link>
     <Badge>
     <Dashboard />
+    <CounterWithLog />
     </Badge>
     </main> 
   );

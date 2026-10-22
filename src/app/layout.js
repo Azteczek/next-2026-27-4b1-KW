@@ -1,5 +1,5 @@
 import "./globals.css"
-
+import { CounterProvider } from "@/components/CounterContext";
 
 export default function RootLayout({ children }) {
   return (
@@ -11,7 +11,10 @@ export default function RootLayout({ children }) {
             <span className="highlight">Ważna informacja</span>
           </nav>
         </header>
-        {children}
+        <CounterProvider>
+          {children}
+        </CounterProvider>
+        
       </body>
     </html>
   );
