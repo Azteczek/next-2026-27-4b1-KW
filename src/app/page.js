@@ -14,6 +14,7 @@ export default function HomePage() {
     <Link href="/about"> Przejdz do strony o nas.</Link>
     <br />
     <Link href="/landing"> Przejdz do strony marketingowej </Link>
+    <br />
     <Badge>
     <Dashboard />
     <CounterWithLog />

@@ -14,7 +14,6 @@ export default function RootLayout({ children }) {
         <CounterProvider>
           {children}
         </CounterProvider>
-        
       </body>
     </html>
   );
