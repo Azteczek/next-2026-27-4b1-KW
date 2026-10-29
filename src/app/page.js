@@ -15,6 +15,7 @@ export default function HomePage() {
     <br />
     <Link href="/landing"> Przejdz do strony marketingowej </Link>
     <br />
+    <Link href="/contact"> Przejdz do formularza.</Link>
     <Badge>
     <Dashboard />
     <CounterWithLog />
