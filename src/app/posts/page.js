@@ -3,21 +3,21 @@ async function getPosts() {
   if (!res.ok) {
     throw new Error('Nie udało się pobrać danych');
   }
-  console.log(res.json());
   return res.json();
 }
  
 export default async function PostsPage() {
+  await new Promise((resolve) => setTimeout(resolve, 2000)); // 2 sekundy
   const posts = await getPosts();
- 
+
   return (
-<main style={{ padding: '2rem' }}>
-<h1>Lista postów</h1>
-<ul>
+    <main style={{ padding: '2rem' }}>
+      <h1>Lista postów</h1>
+      <ul>
         {posts.map((post) => (
-<li key={post.id}>{post.title}</li>
+          <li key={post.id}>{post.title}</li>
         ))}
-</ul>
-</main>
+      </ul>
+    </main>
   );
 }
